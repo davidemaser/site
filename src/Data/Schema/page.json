@@ -1,8 +1,8 @@
 {
-  "default":[
+  "default":
     {
-      "id":"pageID",
-      "title":"",
+      "id":"index",
+      "title":"This is the page title",
       "meta":{
         "description":"",
         "author":"",
@@ -10,7 +10,7 @@
 
         }
       },
-      "item":[
+      "body":
         {
           "item_ID":"",
           "type":"",
@@ -31,7 +31,80 @@
                   "height":""
                 }
               },
-              "content":""
+              "content":"This is default content. Can be anything"
+            },
+            {
+              "type":"div",
+              "class":"class",
+              "id":null,
+              "dimensions":{
+                "desktop":{
+                  "width":"",
+                  "height":""
+                },
+                "mobile":{
+                  "width":"",
+                  "height":""
+                }
+              },
+              "content":[
+                {
+                  "type":"div",
+                  "class":"class",
+                  "id":null,
+                  "dimensions":{
+                    "desktop":{
+                      "width":"",
+                      "height":""
+                    },
+                    "mobile":{
+                      "width":"",
+                      "height":""
+                    }
+                  },
+                  "content":"sub child block 1"
+                },{
+                  "type":"div",
+                  "class":"class",
+                  "id":null,
+                  "dimensions":{
+                    "desktop":{
+                      "width":"",
+                      "height":""
+                    },
+                    "mobile":{
+                      "width":"",
+                      "height":""
+                    }
+                  },
+                  "content":"sub child block 2"
+                }
+              ]
+            }
+          ]
+        },
+      "header":
+        {
+          "item_ID":"",
+          "type":"",
+          "assigned":"",
+          "inherited":false,
+          "blocks":[
+            {
+              "type":"div",
+              "class":"class",
+              "id":null,
+              "dimensions":{
+                "desktop":{
+                  "width":"",
+                  "height":""
+                },
+                "mobile":{
+                  "width":"",
+                  "height":""
+                }
+              },
+              "content":"sdfsdf"
             },
             {
               "type":"div",
@@ -68,7 +141,64 @@
             }
           ]
         }
-      ]
+      ,
+      "footer":
+        {
+          "item_ID":"",
+          "type":"",
+          "assigned":"",
+          "inherited":false,
+          "blocks":[
+            {
+              "type":"div",
+              "class":"class",
+              "id":null,
+              "dimensions":{
+                "desktop":{
+                  "width":"",
+                  "height":""
+                },
+                "mobile":{
+                  "width":"",
+                  "height":""
+                }
+              },
+              "content":"Placeholder content"
+            },
+            {
+              "type":"div",
+              "class":"block-container",
+              "id":null,
+              "dimensions":{
+                "desktop":{
+                  "width":"",
+                  "height":""
+                },
+                "mobile":{
+                  "width":"",
+                  "height":""
+                }
+              },
+              "content":[
+                {
+                  "type":"div",
+                  "class":"class",
+                  "id":null,
+                  "dimensions":{
+                    "desktop":{
+                      "width":"",
+                      "height":""
+                    },
+                    "mobile":{
+                      "width":"",
+                      "height":""
+                    }
+                  },
+                  "content":""
+                }
+              ]
+            }
+          ]
+        }
     }
-  ]
 }
