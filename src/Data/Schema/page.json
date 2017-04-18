@@ -1,25 +1,35 @@
 {
   "default":[
     {
-      "id":"pageID",
-      "title":"",
+      "id":"index",
+      "title":"David Maser Consulting",
       "meta":{
-        "description":"",
-        "author":"",
+        "description":"Front end development and project management consulting",
+        "keywords":["javascript","jquery","web","website","development","webapp"],
+        "author":"David Maser",
         "social":{
 
         }
       },
+      "url":{
+        "default":"www.davidmaser.ca",
+        "client":"client.davidmaser.ca",
+        "tutorials":"tuts.davidmaser.ca",
+        "repo":"davidemaser.github.io"
+      },
       "item":[
         {
-          "item_ID":"",
-          "type":"",
-          "assigned":"",
+          "item_ID":"main",
+          "type":"section",
+          "assignment":{
+            "parent":"App",
+            "root":"body"
+          },
           "inherited":false,
           "blocks":[
             {
               "type":"div",
-              "class":"class",
+              "class":"app-intro",
               "id":null,
               "dimensions":{
                 "desktop":{
@@ -31,40 +41,31 @@
                   "height":""
                 }
               },
-              "content":""
+              "content":{
+                "format":"html",
+                "node":""
+              }
             },
             {
               "type":"div",
-              "class":"class",
+              "class":"app-teaser",
               "id":null,
-              "dimensions":{
-                "desktop":{
-                  "width":"",
-                  "height":""
-                },
-                "mobile":{
-                  "width":"",
-                  "height":""
-                }
-              },
-              "content":[
-                {
-                  "type":"div",
-                  "class":"class",
-                  "id":null,
-                  "dimensions":{
-                    "desktop":{
-                      "width":"",
-                      "height":""
-                    },
-                    "mobile":{
-                      "width":"",
-                      "height":""
+              "dimensions":null,
+              "content":{
+                "format":"object",
+                "node":[
+                  {
+                    "type":"div",
+                    "class":"class",
+                    "id":null,
+                    "dimensions":null,
+                    "content":{
+                      "format":"html",
+                      "node":""
                     }
-                  },
-                  "content":""
-                }
-              ]
+                  }
+                ]
+              }
             }
           ]
         }
