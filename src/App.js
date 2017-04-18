@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./Components/Header";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
-import JsonData from "./Data/Schema/page.json";
+import JsonData from "./Data/Schema/page.json"; //load the page schema directly and pass it around the components
 import Helmet from 'react-helmet';
 
 class App extends Component {

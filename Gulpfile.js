@@ -25,7 +25,7 @@ gulp.task('sass', () => {
 });
 
 gulp.task('doc',(cb) => {
-    gulp.src(['./src/**/*.js','./src/components/**/*.js','./src/widgets/**/*.js'], {read: false})
+    gulp.src(['./src/**/*.js','./src/components/**/*.js'], {read: false})
         .pipe(jsdoc(cb));
 });
 
