@@ -5,6 +5,7 @@
       "title":"This is the page title",
       "meta":{
         "description":"Well here's a description block",
+        "keywords":"web,development,javacript,js,jquery,react,sass,scss,app,webapp,project,management,responsive,reactive",
         "author":"",
         "social":{
 

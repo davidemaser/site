@@ -5,6 +5,8 @@ import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import JsonData from "./Data/Schema/page.json"; //load the page schema directly and pass it around the components
 import Helmet from 'react-helmet';
+import Drawer from 'material-ui/Drawer';
+import UIToolbar from "./Components/UI/Toolbar";
 
 class App extends Component {
     constructor(props) {
@@ -19,10 +21,13 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <Drawer/>
+                <UIToolbar/>
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>{this.state.data.title}</title>
                     <meta name="description" content={this.state.data.meta.description} />
+                    <meta name="keywords" content={this.state.data.meta.keywords} />
                 </Helmet>
                 <Header data={this.state.data} node="header"/>
                 <Content data={this.state.data} node="body"/>
