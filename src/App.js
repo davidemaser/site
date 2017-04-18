@@ -4,6 +4,7 @@ import Header from "./Components/Header";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import JsonData from "./Data/Schema/page.json";
+import Helmet from 'react-helmet';
 
 class App extends Component {
     constructor(props) {
@@ -18,6 +19,11 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>{this.state.data.title}</title>
+                    <meta name="description" content={this.state.data.meta.description} />
+                </Helmet>
                 <Header data={this.state.data} node="header"/>
                 <Content data={this.state.data} node="body"/>
                 <Footer data={this.state.data} node="footer"/>
