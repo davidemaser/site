@@ -19,7 +19,7 @@ class Header extends Component{
             <header>
                 <FormatHtml data={this.state.data[this.state.node]}/>
                 This is the header
-                <Nav/>
+                <Nav data={this.state.data} node="nav"/>
                 <Search/>
             </header>
         )

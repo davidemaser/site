@@ -10,6 +10,24 @@
 
         }
       },
+      "nav":[
+        {
+          "label":"Home",
+          "link":"",
+          "action":"",
+          "prop":""
+        },{
+          "label":"About",
+          "link":"",
+          "action":"",
+          "prop":""
+        },{
+          "label":"Services",
+          "link":"",
+          "action":"",
+          "prop":""
+        }
+      ],
       "body":
         {
           "item_ID":"",

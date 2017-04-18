@@ -12,8 +12,20 @@ class Nav extends Component{
         }
     }
     render(){
+        let dataSet = this.state.data[this.state.node];
+        let dataArray = [];
+        for(let d in dataSet){
+            dataArray.push(
+                <div key={d}>
+                <a href={dataSet[d].link} data-click={dataSet[d].prop}>{dataSet[d].label}</a>
+                </div>
+            )
+        }
+
         return (
-            <nav>Here's the nav</nav>
+            <nav>
+                {dataArray}
+            </nav>
         )
     }
 }
