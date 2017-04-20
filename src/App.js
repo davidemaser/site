@@ -5,24 +5,22 @@ import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import JsonData from "./Data/Schema/page.json"; //load the page schema directly and pass it around the components
 import Helmet from 'react-helmet';
-import Drawer from 'material-ui/Drawer';
-import UIToolbar from "./Components/UI/Toolbar";
+import UIDrawer from "./Components/UI/Drawer";
+import ActionButton from "./Components/UI/ActionButton";
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
             lang: 'en',
-            data:JsonData[this.props.node],
+            data:JsonData[this.props.node]
         };
-        console.log(this.state.data);
     }
 
     render() {
         return (
             <div className="App">
-                <Drawer/>
-                <UIToolbar/>
+                <UIDrawer/>
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>{this.state.data.title}</title>
@@ -32,6 +30,7 @@ class App extends Component {
                 <Header data={this.state.data} node="header"/>
                 <Content data={this.state.data} node="body"/>
                 <Footer data={this.state.data} node="footer"/>
+                <ActionButton/>
             </div>
         );
     }
