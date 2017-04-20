@@ -7,13 +7,18 @@ import JsonData from "./Data/Schema/page.json"; //load the page schema directly 
 import Helmet from 'react-helmet';
 import UIDrawer from "./Components/UI/Drawer";
 import ActionButton from "./Components/UI/ActionButton";
+import Snackbar from 'material-ui/Snackbar'
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
             lang: 'en',
-            data:JsonData[this.props.node]
+            data:JsonData[this.props.node],
+            snackbar:{
+                open:false,
+                message:'here\'s a message'
+            }
         };
     }
 
@@ -31,6 +36,7 @@ class App extends Component {
                 <Content data={this.state.data} node="body"/>
                 <Footer data={this.state.data} node="footer"/>
                 <ActionButton/>
+                <Snackbar open={this.state.snackbar.open} message={this.state.snackbar.message} />
             </div>
         );
     }
