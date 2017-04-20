@@ -33,7 +33,7 @@ class FormatChildHtml extends Component{
     }
 
     render(){
-        console.log(this.state.data)
+        console.log(this.state.data);
         let renderObject = DOMPurify.sanitize(this.parseContent());
         renderObject = renderObject.replace(',',''); //dirty fix
         return(

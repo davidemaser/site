@@ -1,11 +1,11 @@
 /**
  * Created by DAVIM on 18/04/2017.
  */
-import React, {Component} from 'react';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
-import ContentAdd from 'material-ui/svg-icons/content/add';
-import Popover from 'material-ui/Popover/Popover';
-import {Menu, MenuItem} from 'material-ui/Menu';
+import React, {Component} from "react";
+import FloatingActionButton from "material-ui/FloatingActionButton";
+import ContentAdd from "material-ui/svg-icons/content/add";
+import Popover from "material-ui/Popover/Popover";
+import {Menu, MenuItem} from "material-ui/Menu";
 
 class ActionButton extends Component{
     constructor(props){

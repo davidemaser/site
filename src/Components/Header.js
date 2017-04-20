@@ -1,7 +1,7 @@
 /**
  * Created by DAVIM on 17/04/2017.
  */
-import React, {Component} from 'react'
+import React, {Component} from "react";
 import Nav from "./Nav";
 import Search from "./Search";
 import FormatHtml from "./Renderers/FormatHtml";
