@@ -8,9 +8,16 @@ class TableView extends Component{
     constructor(props){
         super(props);
         this.state = {
+            activeCol:null,
             data:this.props.data,
             dataList:DataList.table
-        }
+        };
+
+        this.captureElementClick = this.elementClick.bind(this);
+    }
+
+    elementClick(e){
+        console.log(e.target.innerHTML,e.target.attributes);
     }
 
     buildHeader(data){
@@ -81,7 +88,7 @@ class TableView extends Component{
             let column = content;
             for(c in column){
                 columnArray.push(
-                    <td key={c}>{column[c].content}</td>
+                    <td key={c} data-bind={c} onClick={this.captureElementClick}>{column[c].content}</td>
                 )
             }
         }
