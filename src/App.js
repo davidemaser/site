@@ -10,6 +10,8 @@ import ActionButton from "./Components/UI/ActionButton";
 import Snackbar from 'material-ui/Snackbar'
 import DoSomeMath from "./Components/Renderers/FormatMath";
 import TableView from "./Components/Renderers/TableView";
+import LoadJson from "./Components/Loaders/JsonLoader";
+import DataList from './Data/Table.json';
 
 class App extends Component {
     constructor(props) {
@@ -40,7 +42,8 @@ class App extends Component {
                 <ActionButton/>
                 <Snackbar open={this.state.snackbar.open} message={this.state.snackbar.message} />
                 <DoSomeMath x="8" y="20" method="divi" />
-                <TableView/>
+                <TableView data={DataList['table']}/>
+                <LoadJson url="http://davidemaser.github.io/data/temp-table.json" method="get" target="table"/>
             </div>
         );
     }

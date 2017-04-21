@@ -2,15 +2,13 @@
  * Created by DAVIM on 21/04/2017.
  */
 import React,{Component} from 'react';
-import DataList from '../../Data/Table.json';
 
 class TableView extends Component{
     constructor(props){
         super(props);
         this.state = {
             activeCol:null,
-            data:this.props.data,
-            dataList:DataList.table
+            dataList:this.props.data
         };
 
         this.captureElementClick = this.elementClick.bind(this);
