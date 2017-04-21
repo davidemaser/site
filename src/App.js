@@ -9,6 +9,7 @@ import UIDrawer from "./Components/UI/Drawer";
 import ActionButton from "./Components/UI/ActionButton";
 import Snackbar from 'material-ui/Snackbar'
 import DoSomeMath from "./Components/Renderers/FormatMath";
+import TableView from "./Components/Renderers/TableView";
 
 class App extends Component {
     constructor(props) {
@@ -38,7 +39,8 @@ class App extends Component {
                 <Footer data={this.state.data} node="footer"/>
                 <ActionButton/>
                 <Snackbar open={this.state.snackbar.open} message={this.state.snackbar.message} />
-                <DoSomeMath x="8" y="20" method="multi" operand="floor" />
+                <DoSomeMath x="8" y="20" method="divi" />
+                <TableView/>
             </div>
         );
     }
