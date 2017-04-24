@@ -7,8 +7,8 @@ class DoSomeMath extends Component{
     constructor(props){
         super(props);
         this.state = {
-            x:parseInt(this.props.x,10),
-            y:parseInt(this.props.y,10),
+            a:parseInt(this.props.a,10),
+            b:parseInt(this.props.b,10),
             type:this.props.method,
             operand:this.props.operand
         }
@@ -16,20 +16,20 @@ class DoSomeMath extends Component{
     calculate(){
         let returnValue;
         let type = this.state.type;
-        let x = this.state.x;
-        let y = this.state.y;
+        let a = this.state.a;
+        let b = this.state.b;
         switch (type){
             case 'sum':
-                returnValue = x+y;
+                returnValue = a+b;
                 break;
             case 'multi':
-                returnValue = x*y;
+                returnValue = a*b;
                 break;
             case 'divi':
-                returnValue = x/y;
+                returnValue = a/b;
                 break;
             default:
-                returnValue = x+y;
+                returnValue = a+b;
         }
         function applyOperand(val,op){
             let calcValue;

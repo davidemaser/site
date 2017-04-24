@@ -12,6 +12,7 @@ import DoSomeMath from "./Components/Renderers/FormatMath";
 import TableView from "./Components/Renderers/TableView";
 import LoadJson from "./Components/Loaders/JsonLoader";
 import DataList from './Data/Table.json';
+import BoxMarquee from "./Components/UI/BoxMarquee";
 
 class App extends Component {
     constructor(props) {
@@ -41,8 +42,9 @@ class App extends Component {
                 <Footer data={this.state.data} node="footer"/>
                 <ActionButton/>
                 <Snackbar open={this.state.snackbar.open} message={this.state.snackbar.message} />
-                <DoSomeMath x="8" y="20" method="divi" />
+                <DoSomeMath a="8" b="20" method="divi" operand="none" />
                 <TableView data={DataList['table']}/>
+                <BoxMarquee title="this would be the title" content="this is a title"/>
                 <LoadJson url="http://davidemaser.github.io/data/temp-table.json" method="get" target="table"/>
             </div>
         );
