@@ -17,7 +17,7 @@ class Nav extends Component{
         let dataArray = [];
         for(let d in dataSet){
             dataArray.push(
-                <div key={d}>
+                <div key={d} className="NavItem">
                     <a href={dataSet[d].link} data-click={dataSet[d].prop}>{dataSet[d].label}</a>
                 </div>
             )
