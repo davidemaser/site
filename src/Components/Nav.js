@@ -2,6 +2,7 @@
  * Created by DAVIM on 17/04/2017.
  */
 import React, {Component} from 'react';
+import './StyleSheets/Nav.css';
 
 class Nav extends Component{
     constructor(props){
@@ -23,7 +24,7 @@ class Nav extends Component{
         }
 
         return (
-            <nav>
+            <nav className="NavBlock">
                 {dataArray}
             </nav>
         )

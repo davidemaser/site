@@ -1,0 +1,12 @@
+.NavBlock div {
+    display: inline-block;
+    padding: 10px;
+}
+.NavBlock div a {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.NavBlock div a:hover {
+    text-decoration: underline;
+}

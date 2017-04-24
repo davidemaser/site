@@ -2,6 +2,9 @@
  * Created by DAVIM on 24/04/2017.
  */
 import React,{Component} from 'react';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import RaisedButton from 'material-ui/RaisedButton';
+import './StyleSheets/BoxMarquee.css';
 
 class BoxMarquee extends Component{
     constructor(props){
@@ -22,10 +25,18 @@ class BoxMarquee extends Component{
 
     render(){
         return(
-        <div className="box-marquee" data-state={this.state.visible} onClick={this.changeState}>
-            <div className="box-marquee-header">{this.props.title}</div>
-            <div className="box-marquee-content">{this.props.content}</div>
-        </div>
+        <CSSTransitionGroup
+            transitionName="example"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}>
+            <div className="BoxMarquee-Container">
+                <RaisedButton className="BoxMarquee-Toggle" label="Toggle" onClick={this.changeState} />
+                <div className="BoxMarquee" data-state={this.state.visible}>
+                    <h1 className="BoxMarquee-Header">{this.props.title}</h1>
+                    <p className="BoxMarquee-Content">{this.props.content}</p>
+                </div>
+            </div>
+        </CSSTransitionGroup>
         )
     }
 }
