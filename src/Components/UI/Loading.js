@@ -29,7 +29,7 @@ class Loading extends Component{
         };
         let loaderBlock = this.state.show ? <div className="page-loading" style={parentStyle} onClick={this.showComp}>
             <div className="loader" style={childStyle} />
-        </div> : <div className="page-loading-is-off"></div> ;
+        </div> : null ;
         return(
             loaderBlock
         )
