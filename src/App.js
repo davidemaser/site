@@ -36,7 +36,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Loading background="rgba(0, 0, 0, 0.85)" color="#fff" opacity="dark" show={true} />
+                <Loading background="rgba(0, 0, 0, 0.85)" color="#fff" show={true} error={true} />
                 <UIDrawer/>
                 <Helmet>
                     <meta charSet="utf-8" />
@@ -48,7 +48,7 @@ class App extends Component {
                 <Content data={this.state.data} node="body"/>
                 <Footer data={this.state.data} node="footer"/>
                 <ActionButton/>
-                <Snackbar open={this.state.snackbarOpen} message={this.state.snackbarMessage} />
+                <Snackbar open={this.state.snackbarOpen} message={this.state.snackbarMessage} autoHideDuration={5000} />
                 <DoSomeMath a="8" b="20" method="divi" operand="none" />
                 <BoxMarquee title="this would be the title" content="this is a title"/>
                 <TableView data={DataList['table']} />

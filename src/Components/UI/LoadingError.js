@@ -4,14 +4,14 @@
 import React,{Component} from 'react';
 import './StyleSheets/LoadingComp.css';
 
-class Loading extends Component{
+class LoadingError extends Component{
     constructor(props){
         super(props);
         this.state = {
             color:this.props.color,
             background:this.props.background,
-            show:this.props.show,
-            error:this.props.error
+            opacity:'dark',
+            show:this.props.show
         };
 
         this.showComp = this.showHideComp.bind(this);
@@ -25,12 +25,10 @@ class Loading extends Component{
             backgroundColor:this.props.background
         };
         let childStyle = {
-            borderLeftColor:this.props.color,
-            color:this.props.color
+            borderLeftColor:this.props.color
         };
-        let loadInternal = this.state.error ? <div className="loader error" style={childStyle}><h1 style={childStyle}>Woops. Something went wrong.</h1></div> : <div className="loader" style={childStyle} />;
-        let loaderBlock = this.state.show ? <div className="page-loading" style={parentStyle} onClick={this.showComp}>
-            {loadInternal}
+        let loaderBlock = this.state.show ? <div className="page-loading error" style={parentStyle} onClick={this.showComp}>
+                <div className="loader" style={childStyle}>Woops. Something went wrong.</div>
         </div> : null ;
         return(
             loaderBlock
@@ -38,4 +36,4 @@ class Loading extends Component{
     }
 }
 
-export default Loading;
+export default LoadingError;

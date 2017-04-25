@@ -8,19 +8,13 @@
     z-index: 10000;
     background: rgba(0, 0, 0, 0.85);
 }
-.page-loading.dark{
-    opacity:1;
-}
-.page-loading.clear{
-    opacity:0;
-}
-.loader,
-.loader:after {
+.loader:not(.error),
+.loader:not(.error):after {
     border-radius: 50%;
     width: 10em;
     height: 10em;
 }
-.loader {
+.loader:not(.error) {
     margin: 60px auto;
     font-size: 10px;
     position: relative;

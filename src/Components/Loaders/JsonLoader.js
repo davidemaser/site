@@ -20,9 +20,9 @@ class LoadJson extends Component{
                 {
                     ({error, result, loading}) => {
                         if (loading) {
-                            return <Loading/>
+                            return <Loading background="rgba(0, 0, 0, 0.85)" color="#fff" show={true} error={false} />
                         }else if (error) {
-                            return <div>Woops....</div>
+                            return <Loading background="rgba(0, 0, 0, 0.85)" color="#fff" show={true} error={true} />
                         } else {
                             let data = result.body[this.props.target];
                             return <TableView data={data}/>
