@@ -20,16 +20,21 @@ class App extends Component {
         this.state = {
             lang: 'en',
             data:JsonData[this.props.node],
-            snackbar:{
-                open:false,
-                message:'here\'s a message'
-            }
+            snackbarOpen:true,
+            snackbarMessage:'here\'s a message'
+
         };
+
+        this.toggleSnackBar = this.toggleSnackBar.bind(this);
+    }
+
+    toggleSnackBar(){
+        this.state.snackbarOpen === true ? this.setState({snackbarOpen:false}) : this.setState({snackbarOpen:true});
     }
 
     render() {
         return (
-            <div className="App">
+            <div className="App" onClick={this.toggleSnackBar}>
                 <UIDrawer/>
                 <Helmet>
                     <meta charSet="utf-8" />
@@ -41,10 +46,10 @@ class App extends Component {
                 <Content data={this.state.data} node="body"/>
                 <Footer data={this.state.data} node="footer"/>
                 <ActionButton/>
-                <Snackbar open={this.state.snackbar.open} message={this.state.snackbar.message} />
+                <Snackbar open={this.state.snackbarOpen} message={this.state.snackbarMessage} />
                 <DoSomeMath a="8" b="20" method="divi" operand="none" />
-                <TableView data={DataList['table']}/>
                 <BoxMarquee title="this would be the title" content="this is a title"/>
+                <TableView data={DataList['table']} />
                 <LoadJson url="http://davidemaser.github.io/data/temp-table.json" method="get" target="table"/>
             </div>
         );
