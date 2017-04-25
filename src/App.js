@@ -13,6 +13,7 @@ import TableView from "./Components/Renderers/TableView";
 import LoadJson from "./Components/Loaders/JsonLoader";
 import DataList from './Data/Table.json';
 import BoxMarquee from "./Components/UI/BoxMarquee";
+import Loading from "./Components/UI/Loading";
 
 class App extends Component {
     constructor(props) {
@@ -34,7 +35,8 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App" onClick={this.toggleSnackBar}>
+            <div className="App">
+                <Loading background="rgba(0, 0, 0, 0.85)" color="#fff" opacity="dark" show={true} />
                 <UIDrawer/>
                 <Helmet>
                     <meta charSet="utf-8" />

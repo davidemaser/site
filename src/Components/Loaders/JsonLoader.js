@@ -4,6 +4,7 @@
 import React,{Component} from 'react';
 import Request from 'react-http-request';
 import TableView from "../Renderers/TableView";
+import Loading from "../UI/Loading";
 
 class LoadJson extends Component{
 
@@ -19,7 +20,7 @@ class LoadJson extends Component{
                 {
                     ({error, result, loading}) => {
                         if (loading) {
-                            return <div>loading...</div>;
+                            return <Loading/>
                         }else if (error) {
                             return <div>Woops....</div>
                         } else {
