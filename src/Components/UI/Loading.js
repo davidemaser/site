@@ -3,6 +3,7 @@
  */
 import React,{Component} from 'react';
 import './StyleSheets/LoadingComp.css';
+import PropTypes from 'prop-types';
 
 class Loading extends Component{
     constructor(props){
@@ -37,5 +38,20 @@ class Loading extends Component{
         )
     }
 }
+
+Loading.propTypes = {
+    background:PropTypes.string.isRequired,
+    borderLeftColor:PropTypes.string,
+    color:PropTypes.string.isRequired,
+    show:PropTypes.element.isRequired,
+    error:PropTypes.element,
+};
+Loading.defaultProps  = {
+    background:'#000',
+    borderLeftColor:'#fff',
+    color:'#fff',
+    show:true,
+    error:false
+};
 
 export default Loading;
