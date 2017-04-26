@@ -25,7 +25,6 @@ class App extends Component {
             data:JsonData[this.props.node],
             snackbarOpen:true,
             snackbarMessage:'here\'s a message'
-
         };
 
         this.toggleSnackBar = this.toggleSnackBar.bind(this);
@@ -43,8 +42,8 @@ class App extends Component {
                     <div className="item">Hello</div>
                 </FlexBlockView>
                 <BlockView color={1} background={3}><p>This would be content</p></BlockView>
-                <Loading background="rgba(0, 0, 0, 0.85)" color="#fff" show={true} error={true} />
-                <UIDrawer/>
+                {/*<Loading background="rgba(0, 0, 0, 0.85)" color="#fff" show={true} error={true} />
+                <UIDrawer/>*/}
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>{this.state.data.title}</title>
@@ -55,8 +54,8 @@ class App extends Component {
                 <Content data={this.state.data} node="body"/>
                 <Footer data={this.state.data} node="footer"/>
                 <ActionButton/>
-                <Snackbar open={this.state.snackbarOpen} message={this.state.snackbarMessage} autoHideDuration={5000} />
-                <DoSomeMath a="8" b="20" method="divi" operand="none" />
+                {/*<Snackbar open={this.state.snackbarOpen} message={this.state.snackbarMessage} autoHideDuration={5000} />
+                <DoSomeMath a="8" b="20" method="divi" operand="none" />*/}
                 <BoxMarquee title="this would be the title" content="this is a title"/>
                 <TableView data={DataList['table']} />
                 <LoadJson url="http://davidemaser.github.io/data/temp-table.json" method="get" target="table"/>

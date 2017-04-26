@@ -29,7 +29,8 @@ class BlockView extends Component{
             3:'#96c0ce',
             4:'#beb9b5',
             5:'#c25b56',
-            6:'#fef6eb'
+            6:'#fef6eb',
+            7:'#ededed'
         };
         if(isNaN(col)){
             colorChoice = col;
