@@ -14,6 +14,7 @@ import LoadJson from "./Components/Loaders/JsonLoader";
 import DataList from './Data/Table.json';
 import BoxMarquee from "./Components/UI/BoxMarquee";
 import Loading from "./Components/UI/Loading";
+import BlockView from "./Components/UI/BlockView";
 
 class App extends Component {
     constructor(props) {
@@ -36,6 +37,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <BlockView color={1} background={3}><p>This would be content</p></BlockView>
                 <Loading background="rgba(0, 0, 0, 0.85)" color="#fff" show={true} error={true} />
                 <UIDrawer/>
                 <Helmet>
