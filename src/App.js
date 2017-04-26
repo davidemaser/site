@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
-import './App.css';
 import Header from "./Components/Header";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import JsonData from "./Data/Schema/page.json"; //load the page schema directly and pass it around the components
 import Helmet from 'react-helmet';
-import UIDrawer from "./Components/UI/Drawer";
+{/*import UIDrawer from "./Components/UI/Drawer";*/}
 import ActionButton from "./Components/UI/ActionButton";
-import Snackbar from 'material-ui/Snackbar'
-import DoSomeMath from "./Components/Renderers/FormatMath";
+{/*import Snackbar from 'material-ui/Snackbar'
+import DoSomeMath from "./Components/Renderers/FormatMath";*/}
 import TableView from "./Components/Renderers/TableView";
 import LoadJson from "./Components/Loaders/JsonLoader";
 import DataList from './Data/Table.json';
 import BoxMarquee from "./Components/UI/BoxMarquee";
-import Loading from "./Components/UI/Loading";
+{/*import Loading from "./Components/UI/Loading";*/}
 import BlockView from "./Components/UI/BlockView";
 import FlexBlockView from "./Components/UI/FlexBlockView";
 

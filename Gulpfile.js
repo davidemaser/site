@@ -6,8 +6,8 @@ let sass = require('gulp-sass');
 let jsdoc = require('gulp-jsdoc3');
 let git = require('gulp-git');
 
-let input = './stylesheets/**/*.scss';
-let output = './public/css';
+let input = './src/stylesheets/main.scss';
+let output = './src/stylesheets/css';
 
 let sassOptions = {
     errLogToConsole: true,

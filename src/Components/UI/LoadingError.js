@@ -2,7 +2,6 @@
  * Created by DAVIM on 25/04/2017.
  */
 import React,{Component} from 'react';
-import './StyleSheets/LoadingComp.css';
 
 class LoadingError extends Component{
     constructor(props){

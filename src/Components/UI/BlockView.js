@@ -5,7 +5,6 @@
  * text color
  */
 import React,{Component} from 'react';
-import './StyleSheets/BlockView.css';
 import PropTypes from 'prop-types';
 /*
 * See colors in getColorFromComp function to add

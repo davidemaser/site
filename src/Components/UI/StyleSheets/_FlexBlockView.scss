@@ -1,17 +1,15 @@
 .flex-container{
+    &.inline{
+        display: inline-flex;
+    }
+    .item{
+        flex-basis: 20%;
+        align-self: flex-start;
+    }
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
     align-content: center;
-}
-
-.inline{
-    display: inline-flex;
-}
-
-.flex-container .item{
-    flex-basis: 20%;
-    align-self: flex-start;
 }

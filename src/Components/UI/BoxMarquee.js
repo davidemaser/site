@@ -5,7 +5,6 @@ import React,{Component} from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import RaisedButton from 'material-ui/RaisedButton';
 import PropTypes from 'prop-types';
-import './StyleSheets/BoxMarquee.css';
 
 class BoxMarquee extends Component{
     constructor(props){

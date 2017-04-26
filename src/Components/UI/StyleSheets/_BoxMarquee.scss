@@ -3,15 +3,14 @@
     padding: 10px;
     margin: 10px 0;
     transition: all 300ms ease-in;
-}
-
-.BoxMarquee[data-state="true"]{
-    opacity: 1;
-    height:150px;
-}
-.BoxMarquee[data-state="false"]{
-    opacity: 0;
-    height:0;
+    &[data-state="true"]{
+        opacity: 1;
+        height:150px;
+    }
+    &[data-state="false"]{
+        opacity: 0;
+        height:0;
+    }
 }
 .BoxMarquee-Toggle {
     position: absolute;
