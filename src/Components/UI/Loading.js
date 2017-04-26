@@ -41,9 +41,7 @@ class Loading extends Component{
 Loading.propTypes = {
     background:PropTypes.string.isRequired,
     borderLeftColor:PropTypes.string,
-    color:PropTypes.string.isRequired,
-    show:PropTypes.element.isRequired,
-    error:PropTypes.element,
+    color:PropTypes.string.isRequired
 };
 Loading.defaultProps  = {
     background:'#000',

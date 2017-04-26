@@ -16,6 +16,7 @@ import BoxMarquee from "./Components/UI/BoxMarquee";
 import BlockView from "./Components/UI/BlockView";
 import FlexBlockView from "./Components/UI/FlexBlockView";
 import PropTypes from 'prop-types';
+import UserForm from "./Components/Forms/ContactForm";
 
 class App extends Component {
     constructor(props) {
@@ -37,6 +38,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <UserForm/>
                 <FlexBlockView background={1} color={4}>
                     <div className="item">Hello <br /> how are you <br/>doing</div>
                     <div className="item">Hello</div>
