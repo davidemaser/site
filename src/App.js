@@ -15,6 +15,7 @@ import BoxMarquee from "./Components/UI/BoxMarquee";
 {/*import Loading from "./Components/UI/Loading";*/}
 import BlockView from "./Components/UI/BlockView";
 import FlexBlockView from "./Components/UI/FlexBlockView";
+import PropTypes from 'prop-types';
 
 class App extends Component {
     constructor(props) {
@@ -62,5 +63,11 @@ class App extends Component {
         );
     }
 }
+App.propTypes = {
+    node:PropTypes.string.isRequired
+};
+App.defaultProps ={
+    node:'default'
+};
 
 export default App;
