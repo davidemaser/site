@@ -6,12 +6,12 @@ let sass = require('gulp-sass');
 let jsdoc = require('gulp-jsdoc3');
 let git = require('gulp-git');
 
-let input = './src/stylesheets/main.scss';
+let input = './src/stylesheets/Main.scss';
 let output = './src/stylesheets/css';
 
 let sassOptions = {
     errLogToConsole: true,
-    outputStyle: 'expanded'
+    outputStyle: 'compressed' //nested, expanded, compact, compressed
 };
 
 gulp.task('sass', () => {
