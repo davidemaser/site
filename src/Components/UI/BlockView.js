@@ -52,7 +52,7 @@ class BlockView extends Component{
     }
 }
 BlockView.propTypes = {
-    background:PropTypes.any.isRequired,
-    color:PropTypes.any.isRequired
+    background:PropTypes.any,
+    color:PropTypes.any
 };
 export default BlockView;

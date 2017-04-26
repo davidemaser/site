@@ -51,8 +51,8 @@ class FlexBlockView extends Component{
     }
 }
 FlexBlockView.propTypes = {
-    background:PropTypes.any.isRequired,
-    color:PropTypes.any.isRequired,
+    background:PropTypes.any,
+    color:PropTypes.any,
     type:PropTypes.string.isRequired
 };
 FlexBlockView.defaultProps  = {
