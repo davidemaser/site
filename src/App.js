@@ -16,6 +16,7 @@ import UserForm from "./Components/Forms/ContactForm";
 import SearchForm from "./Components/Forms/SearchForm";
 import ScrollInNav from "./Components/UI/ScrollIn";
 import Waypoint from 'react-waypoint';
+import Calculator from "./Utilities/Calculator";
 
 class App extends Component {
     constructor(props) {
@@ -46,8 +47,8 @@ class App extends Component {
                 </FlexBlockView>
 
                 <BlockView color={1} background={3} height={450}><p>This would be content</p></BlockView>
-                <BlockView color={7} background={5} height={450}><p>This would be content</p></BlockView>
-                <BlockView color={7} background={2} height={450}><p>This would be content</p></BlockView>
+                <BlockView color={7} background={5} height={850}><p>This would be content</p></BlockView>
+                <BlockView color={7} background={2} height={100}><p>This would be content</p></BlockView>
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>{this.state.data.title}</title>
@@ -55,7 +56,7 @@ class App extends Component {
                     <meta name="keywords" content={this.state.data.meta.keywords} />
                 </Helmet>
                 <ScrollInNav scrollInHeight={50}><Header data={this.state.data} node="header"/></ScrollInNav>
-                <Waypoint debug={true} scrollableAncestor={window} onEnter={console.log('just came into view')} onLeave={console.log('just left the view')}>
+                <Waypoint scrollableAncestor={window} onEnter={console.log('just came into view')} onLeave={console.log('just left the view')}>
                     <div>
                     <Content data={this.state.data} node="body"/>
                     </div>
@@ -65,6 +66,7 @@ class App extends Component {
                 <BoxMarquee title="this would be the title" content="this is a title"/>
                 <TableView data={DataList['table']} />
                 <LoadJson url="http://davidemaser.github.io/data/temp-table.json" method="get" target="table"/>
+                <Calculator/>
             </div>
         );
     }
