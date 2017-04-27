@@ -6,6 +6,7 @@
  */
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
+
 /*
 * See colors in getColorFromComp function to add
 * or use existing colors.
@@ -19,7 +20,6 @@ class BlockView extends Component{
         };
 
     }
-
     getColorFromComp(col){
         let colorChoice;
         const colors = {
@@ -42,10 +42,11 @@ class BlockView extends Component{
     render(){
         const style = {
             backgroundColor:this.getColorFromComp(this.props.background),
-            color:this.getColorFromComp(this.props.color)
+            color:this.getColorFromComp(this.props.color),
+            height:this.props.height
         };
         return(
-            <section className="block-view" style={style}>
+           <section className="block-view" style={style}>
                 {this.props.children}
             </section>
         )

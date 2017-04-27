@@ -6,6 +6,7 @@
  */
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
+
 /*
 * See colors in getColorFromComp function to add
 * or use existing colors.

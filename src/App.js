@@ -14,6 +14,8 @@ import FlexBlockView from "./Components/UI/FlexBlockView";
 import PropTypes from 'prop-types';
 import UserForm from "./Components/Forms/ContactForm";
 import SearchForm from "./Components/Forms/SearchForm";
+import ScrollInNav from "./Components/UI/ScrollIn";
+import Waypoint from 'react-waypoint';
 
 class App extends Component {
     constructor(props) {
@@ -37,21 +39,27 @@ class App extends Component {
             <div className="App">
                 <SearchForm async={true} placeholder="This is a placeholder"/>
                 <UserForm/>
+
                 <FlexBlockView background={1} color={4}>
                     <div className="item">Hello <br /> how are you <br/>doing</div>
                     <div className="item">Hello</div>
                 </FlexBlockView>
-                <BlockView color={1} background={3}><p>This would be content</p></BlockView>
-                <BlockView color={7} background={5}><p>This would be content</p></BlockView>
-                <BlockView color={7} background={2}><p>This would be content</p></BlockView>
+
+                <BlockView color={1} background={3} height={450}><p>This would be content</p></BlockView>
+                <BlockView color={7} background={5} height={450}><p>This would be content</p></BlockView>
+                <BlockView color={7} background={2} height={450}><p>This would be content</p></BlockView>
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>{this.state.data.title}</title>
                     <meta name="description" content={this.state.data.meta.description} />
                     <meta name="keywords" content={this.state.data.meta.keywords} />
                 </Helmet>
-                <Header data={this.state.data} node="header"/>
-                <Content data={this.state.data} node="body"/>
+                <ScrollInNav scrollInHeight={50}><Header data={this.state.data} node="header"/></ScrollInNav>
+                <Waypoint debug={true} scrollableAncestor={window} onEnter={console.log('just came into view')} onLeave={console.log('just left the view')}>
+                    <div>
+                    <Content data={this.state.data} node="body"/>
+                    </div>
+                </Waypoint>
                 <Footer data={this.state.data} node="footer"/>
                 <ActionButton/>
                 <BoxMarquee title="this would be the title" content="this is a title"/>
