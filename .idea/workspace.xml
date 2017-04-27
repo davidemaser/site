@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f319b9a6-05e8-4aae-a14a-589b2db7881f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,10 +37,9 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            <state relative-caret-position="21">
+              <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#282#316#0" expanded="true" />
               </folding>
             </state>
@@ -581,7 +579,7 @@
       <workItem from="1493040185769" duration="8754000" />
       <workItem from="1493137519123" duration="5361000" />
       <workItem from="1493144903669" duration="20144000" />
-      <workItem from="1493239460831" duration="4774000" />
+      <workItem from="1493239460831" duration="5073000" />
     </task>
     <task id="LOCAL-00001" summary="Extend features">
       <created>1492463136155</created>
@@ -842,11 +840,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493304274788</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Minor display fixes">
+      <created>1493304749648</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1493304749648</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90941000" />
+    <option name="totallyTimeSpent" value="91240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-9" width="1864" height="1098" extended-state="6" />
@@ -882,7 +887,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Add handlers" />
     <MESSAGE value="Extend tableBuilder with XHR calls" />
     <MESSAGE value="Marquee" />
     <MESSAGE value="Add CSS blocks" />
@@ -907,11 +911,12 @@
     <MESSAGE value="Add SearchForm Component" />
     <MESSAGE value="Extend search form" />
     <MESSAGE value="Extend search component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extend search component" />
+    <MESSAGE value="Minor display fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor display fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1310,10 +1315,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        <state relative-caret-position="21">
+          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
             <element signature="e#282#316#0" expanded="true" />
           </folding>
         </state>
