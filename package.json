@@ -39,7 +39,7 @@
     "redux-devtools": "^3.3.2"
   },
   "scripts": {
-    "start": "concurrently \"gulp sass\" \"gulp doc\" \"react-scripts start\"",
+    "start": "concurrently \"gulp sass\" \"react-scripts start\"",
     "build": "react-scripts build",
     "document":"gulp doc",
     "test": "react-scripts test --env=jsdom",

@@ -4,15 +4,15 @@ import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import JsonData from "./Data/Schema/page.json"; //load the page schema directly and pass it around the components
 import Helmet from 'react-helmet';
-{/*import UIDrawer from "./Components/UI/Drawer";*/}
+import UIDrawer from "./Components/UI/Drawer";
 import ActionButton from "./Components/UI/ActionButton";
-{/*import Snackbar from 'material-ui/Snackbar'
-import DoSomeMath from "./Components/Renderers/FormatMath";*/}
+import Snackbar from 'material-ui/Snackbar';
+import DoSomeMath from "./Components/Renderers/FormatMath";
 import TableView from "./Components/Renderers/TableView";
 import LoadJson from "./Components/Loaders/JsonLoader";
 import DataList from './Data/Table.json';
 import BoxMarquee from "./Components/UI/BoxMarquee";
-{/*import Loading from "./Components/UI/Loading";*/}
+import Loading from "./Components/UI/Loading";
 import BlockView from "./Components/UI/BlockView";
 import FlexBlockView from "./Components/UI/FlexBlockView";
 import PropTypes from 'prop-types';
@@ -46,6 +46,8 @@ class App extends Component {
                     <div className="item">Hello</div>
                 </FlexBlockView>
                 <BlockView color={1} background={3}><p>This would be content</p></BlockView>
+                <BlockView color={7} background={5}><p>This would be content</p></BlockView>
+                <BlockView color={7} background={2}><p>This would be content</p></BlockView>
                 {/*<Loading background="rgba(0, 0, 0, 0.85)" color="#fff" show={true} error={true} />
                 <UIDrawer/>*/}
                 <Helmet>
