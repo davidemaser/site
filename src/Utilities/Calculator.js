@@ -2,29 +2,7 @@
  * Created by David Maser on 27/04/2017.
  */
 import React,{Component} from 'react';
-let calcView = [
-    {
-        'row':{
-            'view':['result','clear','correct']
-        }
-    },
-    {
-        'row':[7,8,9],
-        'func':'divide'
-    },
-    {
-        'row':[4,5,6],
-        'func':'times'
-    },
-    {
-        'row':[1,2,3],
-        'func':'minus'
-    },
-    {
-        'row':[0],
-        'func':['point','plus','equals']
-    }
-];
+let calcView = require('../Data/Contacts.json');
 class Calculator extends Component{
     constructor(props){
         super(props);
