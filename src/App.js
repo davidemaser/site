@@ -17,6 +17,7 @@ import SearchForm from "./Components/Forms/SearchForm";
 import ScrollInNav from "./Components/UI/ScrollIn";
 import Waypoint from 'react-waypoint';
 import Calculator from "./Utilities/Calculator";
+import ContactCard from "./Components/UI/ContactCard";
 
 class App extends Component {
     constructor(props) {
@@ -38,16 +39,16 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+
                 <SearchForm async={true} placeholder="This is a placeholder"/>
                 <UserForm/>
-
                 <FlexBlockView background={1} color={4}>
                     <div className="item">Hello <br /> how are you <br/>doing</div>
                     <div className="item">Hello</div>
                 </FlexBlockView>
 
                 <BlockView color={1} background={3} height={450}><p>This would be content</p></BlockView>
-                <BlockView color={7} background={5} height={850}><p>This would be content</p></BlockView>
+                <BlockView color={7} background={5} height={850}><ContactCard name="david"/></BlockView>
                 <BlockView color={7} background={2} height={100}><p>This would be content</p></BlockView>
                 <Helmet>
                     <meta charSet="utf-8" />
