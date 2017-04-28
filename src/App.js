@@ -39,7 +39,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-
                 <SearchForm async={true} placeholder="This is a placeholder"/>
                 <UserForm/>
                 <FlexBlockView background={1} color={4}>
