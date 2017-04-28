@@ -2,7 +2,9 @@
  * Created by David Maser on 27/04/2017.
  */
 import React,{Component} from 'react';
-let calcView = require('../Data/Contacts.json');
+import Math from 'math-expression-evaluator';
+
+let calcView = require('../Data/Calculator.json');
 class Calculator extends Component{
     constructor(props){
         super(props);
@@ -18,7 +20,7 @@ class Calculator extends Component{
 
     handleClick(event){
         if(event.target.innerText === '='){
-            this.setState({calcView:eval(this.state.calcView)})
+            this.setState({calcView:Math.eval(this.state.calcView)})
         }else if(event.target.innerText === 'C'){
             this.setState({calcView:''})
         }else if(event.target.innerText === 'CE'){
