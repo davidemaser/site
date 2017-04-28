@@ -20,9 +20,12 @@
   >*:not(h1) {
     padding: 10px;
     margin: 0;
+    text-align: left;
   }
   h1 {
     padding: 0 10px;
     margin: 0;
+    text-align: left;
+
   }
 }

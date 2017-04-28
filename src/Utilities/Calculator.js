@@ -48,7 +48,8 @@ class Calculator extends Component{
             let formInputLength = formInput.value.length;
             this.setState({calcView:formInput.value.substr(0,formInputLength-1)})
         }else{
-            this.setState({calcView:this.state.calcView+=event.target.innerText})
+            let newState = this.state.calcView+event.target.innerText;
+            this.setState({calcView:newState});
         }
     }
 
@@ -86,11 +87,11 @@ class Calculator extends Component{
                 let rowView = obj.row.view;
                 for(let r in rowView){
                     if(rowView[r] === 'result'){
-                        rowArray.push(<div itemProp="result"><input id="result-view" type="text"/></div>)
+                        rowArray.push(<div key={r} itemProp="result"><input id="result-view" type="text"/></div>)
                     }else if(rowView[r] === 'clear'){
-                        rowArray.push(<div itemProp="func" title="CLEAR" onClick={this.handleClick}>C</div>)
+                        rowArray.push(<div key={r} itemProp="func" title="CLEAR" onClick={this.handleClick}>C</div>)
                     }else if(rowView[r] === 'correct'){
-                        rowArray.push(<div itemProp="func" title="CORRECTION" onClick={this.handleClick}>CE</div>)
+                        rowArray.push(<div key={r} itemProp="func" title="CORRECTION" onClick={this.handleClick}>CE</div>)
                     }
                 }
             }
@@ -98,8 +99,8 @@ class Calculator extends Component{
         }
         if(obj.func !== undefined){
             Array.isArray(obj.func) ?
-                rowArray.push(<div className="funcGroup" itemProp="func">{this.renderFunc(obj.func)}</div>):
-                rowArray.push(<div itemProp="func" onClick={this.handleClick}>{this.renderFunc(obj.func)}</div>);
+                rowArray.push(<div key={JSON.stringify(obj.func)} className="funcGroup" itemProp="func">{this.renderFunc(obj.func)}</div>):
+                rowArray.push(<div key={JSON.stringify(obj.func)} itemProp="func" onClick={this.handleClick}>{this.renderFunc(obj.func)}</div>);
         }
         return(
             rowArray

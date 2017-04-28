@@ -5,22 +5,7 @@ import React,{Component} from 'react';
 import DOMPurify from 'dompurify';
 import DefaultImage from '../../Images/Profile.png';
 
-let contactList = {
-    david: {
-        name: 'David Maser',
-        image: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png',
-        title: 'Consultant',
-        expertise: ['JavaScript', 'jQuery', 'ReactJS'],
-        comment: 'Hello my name is'
-    },
-    jim: {
-        name: 'David Maser',
-        image: '',
-        title: 'Consultant',
-        expertise: ['JavaScript', 'jQuery', 'ReactJS'],
-        comment: ''
-    }
-};
+let contactList = require('../../Data/Contacts.json');
 
 let contactCartTemplate = '<div class="contact-card">' +
     '<div class="contact-pic">' +
