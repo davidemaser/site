@@ -39,16 +39,6 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <SearchForm async={true} placeholder="This is a placeholder"/>
-                <UserForm/>
-                <FlexBlockView background={1} color={4}>
-                    <div className="item">Hello <br /> how are you <br/>doing</div>
-                    <div className="item">Hello</div>
-                </FlexBlockView>
-
-                <BlockView color={1} background={3} height={450}><p>This would be content</p></BlockView>
-                <BlockView color={7} background={5} height={850}><ContactCard name="david"/></BlockView>
-                <BlockView color={7} background={2} height={100}><p>This would be content</p></BlockView>
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>{this.state.data.title}</title>
@@ -56,6 +46,15 @@ class App extends Component {
                     <meta name="keywords" content={this.state.data.meta.keywords} />
                 </Helmet>
                 <ScrollInNav scrollInHeight={50}><Header data={this.state.data} node="header"/></ScrollInNav>
+                <SearchForm async={true} placeholder="This is a placeholder"/>
+                <UserForm/>
+                <FlexBlockView background={1} color={4}>
+                    <div className="item">Hello <br /> how are you <br/>doing</div>
+                    <div className="item">Hello</div>
+                </FlexBlockView>
+                <BlockView color={1} background={3} height={450}><p>This would be content</p></BlockView>
+                <BlockView color={7} background={5} height={850}><ContactCard name="david"/></BlockView>
+                <BlockView color={7} background={2} height={100}><p>This would be content</p></BlockView>
                 <Waypoint scrollableAncestor={window} onEnter={console.log('just came into view')} onLeave={console.log('just left the view')}>
                     <div>
                     <Content data={this.state.data} node="body"/>
