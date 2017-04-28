@@ -1,5 +1,5 @@
 /**
- * Created by DAVIM on 13/04/2017.
+ * Created by David Maser on 13/04/2017.
  */
 let gulp = require('gulp');
 let sass = require('gulp-sass');

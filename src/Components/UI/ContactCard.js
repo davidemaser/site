@@ -1,5 +1,5 @@
 /**
- * Created by DAVIM on 28/04/2017.
+ * Created by David Maser on 28/04/2017.
  */
 import React,{Component} from 'react';
 import DOMPurify from 'dompurify';

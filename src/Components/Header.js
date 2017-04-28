@@ -1,5 +1,5 @@
 /**
- * Created by DAVIM on 17/04/2017.
+ * Created by David Maser on 17/04/2017.
  */
 import React, {Component} from "react";
 import Nav from "./Nav";

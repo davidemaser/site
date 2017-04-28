@@ -1,5 +1,5 @@
 /**
- * Created by DAVIM on 21/04/2017.
+ * Created by David Maser on 21/04/2017.
  */
 import React,{Component} from 'react';
 import Request from 'react-http-request';

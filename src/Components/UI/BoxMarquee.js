@@ -1,5 +1,5 @@
 /**
- * Created by DAVIM on 24/04/2017.
+ * Created by David Maser on 24/04/2017.
  */
 import React,{Component} from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
