@@ -5,7 +5,7 @@ import React,{Component} from 'react';
 let calcView = [
     {
         'row':{
-            'view':['result','clear']
+            'view':['result','clear','correct']
         }
     },
     {
@@ -31,7 +31,7 @@ class Calculator extends Component{
         this.state={
             calcView:''
         };
-        this.handleClick = this.handleClick.bind(this)
+        this.handleClick = this.handleClick.bind(this);
     }
 
     componentDidUpdate(){
@@ -43,6 +43,10 @@ class Calculator extends Component{
             this.setState({calcView:eval(this.state.calcView)})
         }else if(event.target.innerText === 'C'){
             this.setState({calcView:''})
+        }else if(event.target.innerText === 'CE'){
+            let formInput = document.getElementById('result-view');
+            let formInputLength = formInput.value.length;
+            this.setState({calcView:formInput.value.substr(0,formInputLength-1)})
         }else{
             this.setState({calcView:this.state.calcView+=event.target.innerText})
         }
@@ -85,6 +89,8 @@ class Calculator extends Component{
                         rowArray.push(<div itemProp="result"><input id="result-view" type="text"/></div>)
                     }else if(rowView[r] === 'clear'){
                         rowArray.push(<div itemProp="func" title="CLEAR" onClick={this.handleClick}>C</div>)
+                    }else if(rowView[r] === 'correct'){
+                        rowArray.push(<div itemProp="func" title="CORRECTION" onClick={this.handleClick}>CE</div>)
                     }
                 }
             }
